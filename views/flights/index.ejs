@@ -4,18 +4,16 @@
 
 <main>
     <h1><%= title %></h1>
-    <table id="list">
+    <table>
       <thead>
         <tr>
           <th>Airline</th>
           <th>Airport</th>
           <th>Flight No.</th>
-          <th>Departs</th>
+          <th>Departure Date</th>
         </tr>
       </thead>
       <tbody>
-        <%# Oh hey, this is an ejs comment! It starts with a # %>
-        <%# Write the line of EJS to iterate over movies using forEach %>
         <% flights.forEach(flight => { %> 
           <tr>
             <td><%= flight.airline %></td>

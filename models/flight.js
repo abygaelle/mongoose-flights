@@ -3,10 +3,8 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema
 
 const ticketSchema = new Schema({
-  seat: {type: String, match: /[A-F][1-9]\d?/
-  },
-  price: {type: Number, min: 0
-  }
+  seat: {type: String, match: /[A-F][1-9]\d?/},
+  price: {type: Number, min: 0}
 }, {
   timestamps: true,
 })
@@ -14,12 +12,14 @@ const ticketSchema = new Schema({
 const flightSchema = new Schema({
   airline: {
     type: String,
-    enum: ["American", "Southwest", "United"]
+    enum: ["American", "Southwest", "United"],
+    required: true,
   },
   airport: {
     type: String,
     enum: ["AUS", "DFW", "DEN", "LAX", "SAN"],
     default: "DEN",
+    required: true,
   },
   
   flightNo: {

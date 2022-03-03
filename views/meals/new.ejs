@@ -3,20 +3,19 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1><%= title %></h1>
-  <p>
-    Please first ensure that the Meal is not in the drop down
-    <select>
-      <% meals.forEach(meal => { %>
-        <option><%= meal.name %></option>
-      <% }) %>
-    </select>
-  </p>
+  <h1><%= Add a New Meal %></h1>
   <form id="add-meal-form" action="/meals" method="post">
-    <label for="name-input">Name:</label>
+    <label for="name-input">Meal Item:</label>
     <input type="text" name="name" id="name-input">
-    <button type="submit">Add meal</button>
+    <button type="submit">Add Meal</button>
   </form>
+  <p>
+    Please first ensure that the Meal is not in the drop down</p>
+    <ul>
+      <% meals.forEach(function(meal) { %>
+        <li><%= meal.name %></li>
+      <% }) %>
+    </ul>
 </main>
 
 <%- include('../partials/footer') %>
