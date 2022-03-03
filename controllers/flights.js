@@ -79,7 +79,7 @@ function createTicket(req, res) {
   })
 }
 
-function addtoMeal(req,res){
+function addToMeal(req,res){
   Flight.findById(req.params.id, function(err, flight) {
     flight.meals.push(req.body.mealId)
     flight.save(function(err) {
@@ -98,5 +98,5 @@ export {
   edit,
   update,
   createTicket,
-  addtoMeal,
+  addToMeal,
 }
