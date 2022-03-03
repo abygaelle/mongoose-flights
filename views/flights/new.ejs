@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>New Flight</title>
+</head>
+<body>
+  <h1>Add A New Flight</h1>
+  <form action="/flights" method="post">
+    <label>Airline:
+      <input type="text" name="airline" required>
+    </label><br>
+    <label>Airport:
+      <select name="airport" required>
+        <option value="">--Please choose an option--</option>
+        <option value="AUS">AUS</option>
+        <option value="DFW">DFW</option>
+        <option value="DEN">DEN</option>
+        <option value="LAX">LAX</option>
+        <option value="SAN">SAN</option>
+      </select>
+    </label><br>
+    <label>Flight Number:
+      <input type="text" name="flightNo" required>
+    </label><br>
+    <label>Departing Date:
+      <input type="datetime-local" name="departs" required>
+    </label><br>
+    <button type="submit" id="add-flight">Add Flight</button>
+  </form>
+</body>
+</html>
