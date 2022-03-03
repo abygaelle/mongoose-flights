@@ -1,14 +1,6 @@
 body {
   padding: 50px;
   font: 17px "fantasy", Helvetica, Arial, sans-serif;
-  /* background-color: rgb(247, 208, 248);
-  display: grid;
-  grid-template-rows: 30px 1fr;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  color: green;
-  border: 15px solid salmon; */
 }
 
 a  {
@@ -16,14 +8,4 @@ a  {
   display: inline-block;
 }
 
-/* nav {
-  background-color: lightblue;
-  padding: 20px;
-  margin: 0;
-  width: 100%;
-} */
 
-/* main {
-  font-weight: bold;
-  
-} */

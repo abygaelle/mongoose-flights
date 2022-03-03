@@ -3,6 +3,7 @@ form {
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 35.2rem));
   font-size: 2rem;
+  gap: 20px;
 }
 
 form * {
